@@ -3,9 +3,13 @@ This project predicts house prices using Machine Learning by analyzing property 
 Key Features:
 
 1.Home Dashboard:Provides a centralized view of the house price prediction system.Helps users easily navigate through data input, prediction, and results.
+
 2.Prediction Interface:Accepts user inputs such as location, area, and number of rooms.Generates house price predictions using the trained ML model.
+
 3.Data Input Module:Allows users to enter or upload housing data efficiently.Ensures all required property features are captured for accurate prediction.
+
 4.Result Analysis:Displays predicted house prices in a clear and understandable format.Helps users interpret the prediction outcome effectively.
+
 5.Model Performance Evaluation:Evaluates the model using metrics like accuracy and MAE.Ensures reliability and effectiveness of the prediction system.
 
 The House Price Prediction project aims to improve the accuracy and efficiency of estimating property values using machine learning techniques. With a user-friendly system, users can input property details and analyze predicted prices, helping buyers, sellers, and investors make better real-estate decisions.
