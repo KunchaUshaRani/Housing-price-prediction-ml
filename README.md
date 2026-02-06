@@ -19,6 +19,7 @@ Install Python and required libraries (NumPy, Pandas, Scikit-learn).Run the main
 
 <img width="1897" height="932" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/b407c732-abd0-49de-9135-7b7c0e28a068" />
 <img width="1904" height="916" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/e9b7ff20-775b-4bbe-96d2-501fb814aab8" />
+<img width="1904" height="923" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/952d3d88-cf16-48e5-93ec-e1e0809b2e41" />
 <img width="1914" height="922" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/222c601b-31ac-4b0b-86e2-985dfe21b837" />
 
 
