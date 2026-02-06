@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff3e0; /* Light orange fallback */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #25a2b8; /* Orange header */
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #060a0a; /* Love (pinkish-red) title */
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-btn {
+    padding: 0.5rem 1rem;
+    background-color: #2313b0; /* Love for nav buttons */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #dcd3d3; /* Darker love on hover */
+}
+
+main {
+    height: 100vh; /* Full-screen height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img/bg2.avif'); /* Neighborhood image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    background: rgba(255, 255, 255, 0.85); /* Slightly less transparent for prominence */
+    padding: 3rem 4rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    color: #131414; /* Orange heading */
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section .btn {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    background-color: #642ed8; /* Love for prominent button */
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero-section .btn:hover {
+    background-color: #20c1c7; /* Darker love on hover */
+}
+.upload-btn {
+    background-color: #10b981;
+}
+
+.upload-btn:hover {
+    background-color: #059669;
+}
+
+.about-section, .contact-section {
+    background: white;
+    padding: 3rem 1rem;
+    margin: 0;
+}
+
+.section-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2, .contact-section h2 {
+    font-size: 2rem;
+    color: #29ddce; /* Orange headings */
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #111212; /* Love for labels */
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #101314; /* Orange borders */
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form .btn {
+    background-color: #541de0; /* Orange button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form .btn:hover {
+    background-color: #1d1dd621; /* Darker orange on hover */
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.638);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 700px; /* Increased from 500px */
+    text-align: center;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #0c99ebef; /* Love for back button */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #65848d; /* Darker love on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1dc0cf; /* Orange footer */
+    color: white;
+    width: 100%;
+}
+
+p a {
+    color: #0b1315; /* Love for links */
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #18c2c2; /* Darker love on hover */
+}
+
+.error {
+    color: #b8c6ca; /* Love for errors */
+    margin-bottom: 1rem;
+}
+
+/* Table Styles */
+/* Main */
+main {
+    padding: 30px 5%;
+}
+
+/* Dashboard section */
+.dashboard-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.dashboard-section h2 {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    border-left: 6px solid #3b82f6;
+    padding-left: 12px;
+}
+
+/* Tables */
+div[style*="overflow-x:auto;"] {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+th, td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    font-size: 0.92rem;
+}
+
+th {
+    background-color: #25a2b8;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+table td, table th {
+    border-radius: 4px;
+}
+
+table a {
+    text-decoration: none;
+    color: #25a2b8;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: #1c8b99;
+}
+
+/* Table Actions (Optional) */
+.table-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.table-actions button {
+    padding: 0.6rem 1.2rem;
+    background-color: #541de0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+}
+
+.table-actions button:hover {
+    background-color: #1d1dd6;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #d0d0d0; /* Darker color on hover */
+}
+
+.pagination .active {
+    background-color: #25a2b8; /* Active page button color */
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .nav-btn {
+        margin: 0.2rem;
+    }
+
+    main {
+        height: 80vh; /* Slightly shorter for mobile */
+        padding: 1rem;
+    }
+
+    .hero-section {
+        padding: 2rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section .btn {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .about-section, .contact-section {
+        padding: 2rem 1rem;
+    }
+
+    .section-container {
+        padding: 0 1rem;
+    }
+
+    .about-section h2, .contact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-container {
+        padding: 1rem;
+    }
+
+    table th, table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+.home-category-section {
+    padding: 3rem 2rem;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.home-category-section h2 {
+    font-size: 2rem;
+    color: #25a2b8;
+    margin-bottom: 2rem;
+}
+
+.home-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.home-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+}
+
+.home-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.home-card h3 {
+    color: #541de0;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.home-card ul {
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.home-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.card-btn {
+    display: inline-block;
+    background-color: #25a2b8;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #1c8b99;
+}
+.blurred main, .blurred header, .blurred footer {
+    filter: blur(5px);
+}
+
+.popup {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px #00000080;
+    animation: popIn 0.3s ease;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+    color: #0077cc;
+}
+
+.popup-content p {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.popup-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #0077cc;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}

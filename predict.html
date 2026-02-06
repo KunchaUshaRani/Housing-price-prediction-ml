@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict House Price</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<?php
+session_start();
+if (!isset($_SESSION['user'])) {
+    header('Location: login.html');
+    exit;
+}
+?>
+<header>
+    <div class="header-container">
+        <h1>Predict House Price</h1>
+        <nav>
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="about.html" class="nav-btn">About</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+            <a href="logout.php" class="nav-btn">Logout</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="form-container">
+        <form action="predict.php" method="POST" id="predictForm">
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <select id="location" name="location" required>
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="Urban">Urban</option>
+                    <option value="Suburban">Suburban</option>
+                    <option value="Rural">Rural</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="area">Area (sqft):</label>
+                <input type="number" id="area" name="area" min="500" max="10000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bedrooms">Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" min="1" max="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="schools">Schools Quality:</label>
+                <select id="schools" name="schools" required>
+                    <option value="" disabled selected>Select Quality</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="crime">Crime Rate:</label>
+                <select id="crime" name="crime" required>
+                    <option value="" disabled selected>Select Crime Rate</option>
+                    <option value="Low">Low</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="distance">Distance to City Center (km):</label>
+                <input type="number" id="distance" name="distance" min="1" max="100" step="0.1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year Built:</label>
+                <input type="number" id="year" name="year" min="1900" max="2025" required>
+            </div>
+
+            <div class="form-group">
+                <label for="garage">Garage:</label>
+                <select id="garage" name="garage" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit" class="btn">Predict Price</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<!-- Popup moved inside <body> -->
+<div id="popup" class="popup" style="display: none;">
+    <div class="popup-content">
+        <span id="closePopup" class="close">&times;</span>
+        <h2>Predicted House Price</h2>
+        <p id="predictedAmount">₹0</p>
+        <a href="predict.html" class="popup-link">Predict Another</a>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 IJRASET Project | Powered by xAI</p>
+</footer>
+
+<!-- JS should come after popup so elements exist when JS loads -->
+<script>
+window.onload = function () {
+    const form = document.getElementById('predictForm');
+    const popup = document.getElementById('popup');
+    const predictedAmount = document.getElementById('predictedAmount');
+    const closePopup = document.getElementById('closePopup');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+
+        fetch('predict.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.status === 'success') {
+                predictedAmount.innerText = '₹' + data.price.toLocaleString();
+                popup.style.display = 'flex';
+                document.body.classList.add('blurred');
+            } else {
+                alert(data.message || 'Something went wrong.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Server error or invalid response.');
+        });
+    });
+
+    closePopup.addEventListener('click', function () {
+        popup.style.display = 'none';
+        document.body.classList.remove('blurred');
+    });
+};
+</script>
+</body>
+</html>
