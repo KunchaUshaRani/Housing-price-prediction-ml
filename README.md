@@ -14,3 +14,4 @@ How to Use Code
 Install Python and required libraries (NumPy, Pandas, Scikit-learn).Run the main Python file to train the model and predict house prices.Enter property details as input to get the predicted house price output.
 
 <img width="1897" height="932" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/b407c732-abd0-49de-9135-7b7c0e28a068" />
+"C:\Users\kunch\OneDrive\Pictures\Screenshots 1\Screenshot (6).png"
