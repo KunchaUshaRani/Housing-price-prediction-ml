@@ -15,6 +15,7 @@ Key Features:
 The House Price Prediction project aims to improve the accuracy and efficiency of estimating property values using machine learning techniques. With a user-friendly system, users can input property details and analyze predicted prices, helping buyers, sellers, and investors make better real-estate decisions.
 
 How to Use Code
+
 Install Python and required libraries (NumPy, Pandas, Scikit-learn).Run the main Python file to train the model and predict house prices.Enter property details as input to get the predicted house price output.
 
 <img width="1898" height="926" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/8002cb7f-545d-42d4-8140-d108cb32a5a3" />
