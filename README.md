@@ -1,22 +1,105 @@
-This project predicts house prices using Machine Learning by analyzing property features such as location, area, and number of rooms.It includes data preprocessing, feature analysis, model training, and performance evaluation.The system is developed using Python, NumPy, Pandas, and Scikit-learn with regression-based ML models.
+🏠 House Price Prediction using Machine Learning
+📌 Project Overview
 
-Key Features:
+This project predicts house prices using Machine Learning by analyzing property features such as location, area, and number of rooms.
 
-1.Home Dashboard:Provides a centralized view of the house price prediction system.Helps users easily navigate through data input, prediction, and results.
+The system includes data preprocessing, feature analysis, model training, and performance evaluation.
+It is developed using Python, NumPy, Pandas, and Scikit-learn with regression-based machine learning models.
 
-2.Prediction Interface:Accepts user inputs such as location, area, and number of rooms.Generates house price predictions using the trained ML model.
+The goal of this project is to help users estimate property prices accurately using intelligent data analysis.
+🚀 Key Features
+1️⃣ Home Dashboard
 
-3.Data Input Module:Allows users to enter or upload housing data efficiently.Ensures all required property features are captured for accurate prediction.
+Provides a centralized view of the house price prediction system.
 
-4.Result Analysis:Displays predicted house prices in a clear and understandable format.Helps users interpret the prediction outcome effectively.
+Helps users easily navigate through data input, prediction, and results.
 
-5.Model Performance Evaluation:Evaluates the model using metrics like accuracy and MAE.Ensures reliability and effectiveness of the prediction system.
+2️⃣ Prediction Interface
 
-The House Price Prediction project aims to improve the accuracy and efficiency of estimating property values using machine learning techniques. With a user-friendly system, users can input property details and analyze predicted prices, helping buyers, sellers, and investors make better real-estate decisions.
+Accepts user inputs such as location, area, and number of rooms.
 
-How to Use Code
+Generates house price predictions using the trained machine learning model.
 
-Install Python and required libraries (NumPy, Pandas, Scikit-learn).Run the main Python file to train the model and predict house prices.Enter property details as input to get the predicted house price output.
+3️⃣ Data Input Module
+
+Allows users to enter or upload housing data efficiently.
+
+Ensures all required property features are captured for accurate prediction.
+
+4️⃣ Result Analysis
+
+Displays predicted house prices in a clear and understandable format.
+
+Helps users interpret the prediction outcome effectively.
+
+5️⃣ Model Performance Evaluation
+
+Evaluates the model using metrics like Accuracy and Mean Absolute Error (MAE).
+
+Ensures reliability and effectiveness of the prediction system.
+
+🎯 Project Objective
+
+The House Price Prediction system aims to improve the accuracy and efficiency of estimating property values using machine learning techniques.
+
+With a user-friendly system, users can input property details and analyze predicted prices, helping buyers, sellers, and investors make better real-estate decisions.
+
+🛠 Technologies Used
+
+Python
+
+NumPy
+
+Pandas
+
+Scikit-learn
+
+Machine Learning (Regression Models)
+⚙️ How to Run the Project
+Step 1: Install Python
+
+Make sure Python is installed on your system.
+
+Step 2: Install Required Libraries
+
+Install the required libraries using pip:
+
+pip install numpy pandas scikit-learn
+
+Step 3: Run the Project
+
+Run the main Python file:
+
+python main.py
+
+Step 4: Enter Property Details
+
+Provide inputs such as:
+
+Location
+
+Area
+
+Number of rooms
+
+The system will generate the predicted house price.
+
+📊 Output
+
+The model predicts house prices and evaluates performance using:
+
+Mean Absolute Error (MAE)
+
+Accuracy metrics
+
+📌 Future Improvements
+
+Add a web interface using Flask or Streamlit
+
+Use larger real estate datasets
+
+Improve model accuracy with advanced ML algorithms
+
 
 <img width="1898" height="926" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/8002cb7f-545d-42d4-8140-d108cb32a5a3" />
 <img width="1904" height="916" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/e9b7ff20-775b-4bbe-96d2-501fb814aab8" />
