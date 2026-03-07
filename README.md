@@ -1,104 +1,119 @@
-🏠 House Price Prediction using Machine Learning
-📌 Project Overview
+# 🏠 House Price Prediction using Machine Learning
 
-This project predicts house prices using Machine Learning by analyzing property features such as location, area, and number of rooms.
+## 📌 Project Overview
 
-The system includes data preprocessing, feature analysis, model training, and performance evaluation.
-It is developed using Python, NumPy, Pandas, and Scikit-learn with regression-based machine learning models.
+This project predicts house prices using **Machine Learning** by analyzing property features such as **location, area, and number of rooms**.
+
+The system includes **data preprocessing, feature analysis, model training, and performance evaluation**.
+It is developed using **Python**, **NumPy**, **Pandas**, and **Scikit-learn** with regression-based machine learning models.
 
 The goal of this project is to help users estimate property prices accurately using intelligent data analysis.
-🚀 Key Features
-1️⃣ Home Dashboard
 
-Provides a centralized view of the house price prediction system.
+---
 
-Helps users easily navigate through data input, prediction, and results.
+# 🚀 Key Features
 
-2️⃣ Prediction Interface
+### 1️⃣ Home Dashboard
 
-Accepts user inputs such as location, area, and number of rooms.
+* Provides a centralized view of the house price prediction system.
+* Helps users easily navigate through data input, prediction, and results.
 
-Generates house price predictions using the trained machine learning model.
+### 2️⃣ Prediction Interface
 
-3️⃣ Data Input Module
+* Accepts user inputs such as **location, area, and number of rooms**.
+* Generates house price predictions using the trained machine learning model.
 
-Allows users to enter or upload housing data efficiently.
+### 3️⃣ Data Input Module
 
-Ensures all required property features are captured for accurate prediction.
+* Allows users to enter or upload housing data efficiently.
+* Ensures all required property features are captured for accurate prediction.
 
-4️⃣ Result Analysis
+### 4️⃣ Result Analysis
 
-Displays predicted house prices in a clear and understandable format.
+* Displays predicted house prices in a clear and understandable format.
+* Helps users interpret the prediction outcome effectively.
 
-Helps users interpret the prediction outcome effectively.
+### 5️⃣ Model Performance Evaluation
 
-5️⃣ Model Performance Evaluation
+* Evaluates the model using metrics like **Accuracy** and **Mean Absolute Error (MAE)**.
+* Ensures reliability and effectiveness of the prediction system.
 
-Evaluates the model using metrics like Accuracy and Mean Absolute Error (MAE).
+---
 
-Ensures reliability and effectiveness of the prediction system.
+# 🎯 Project Objective
 
-🎯 Project Objective
+The **House Price Prediction system** aims to improve the accuracy and efficiency of estimating property values using machine learning techniques.
 
-The House Price Prediction system aims to improve the accuracy and efficiency of estimating property values using machine learning techniques.
+With a user-friendly system, users can input property details and analyze predicted prices, helping **buyers, sellers, and investors make better real-estate decisions**.
 
-With a user-friendly system, users can input property details and analyze predicted prices, helping buyers, sellers, and investors make better real-estate decisions.
+---
 
-🛠 Technologies Used
+# 🛠 Technologies Used
 
-Python
+* Python
+* NumPy
+* Pandas
+* Scikit-learn
+* Machine Learning (Regression Models)
 
-NumPy
+---
 
-Pandas
+# ⚙️ How to Run the Project
 
-Scikit-learn
-
-Machine Learning (Regression Models)
-⚙️ How to Run the Project
-Step 1: Install Python
+### Step 1: Install Python
 
 Make sure Python is installed on your system.
 
-Step 2: Install Required Libraries
+### Step 2: Install Required Libraries
 
 Install the required libraries using pip:
 
 pip install numpy pandas scikit-learn
 
-Step 3: Run the Project
+### Step 3: Run the Project
 
 Run the main Python file:
 
 python main.py
 
-Step 4: Enter Property Details
+### Step 4: Enter Property Details
 
 Provide inputs such as:
 
-Location
+* Location
+* Area
+* Number of rooms
 
-Area
+The system will generate the **predicted house price**.
 
-Number of rooms
+---
 
-The system will generate the predicted house price.
-
-📊 Output
+# 📊 Output
 
 The model predicts house prices and evaluates performance using:
 
-Mean Absolute Error (MAE)
+* Mean Absolute Error (MAE)
+* Accuracy metrics
 
-Accuracy metrics
+---
 
-📌 Future Improvements
+# 📌 Future Improvements
 
-Add a web interface using Flask or Streamlit
+* Add a **web interface using Flask or Streamlit**
+* Use **larger real estate datasets**
+* Improve model accuracy with **advanced ML algorithms**
 
-Use larger real estate datasets
+---
 
-Improve model accuracy with advanced ML algorithms
+# 👩‍💻 Author
+
+Developed as a **Machine Learning Project for House Price Prediction**.
+
+
+
+
+
+
 
 
 <img width="1898" height="926" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/8002cb7f-545d-42d4-8140-d108cb32a5a3" />
