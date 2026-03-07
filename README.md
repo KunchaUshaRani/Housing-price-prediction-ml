@@ -105,9 +105,7 @@ The model predicts house prices and evaluates performance using:
 
 ---
 
-# 👩‍💻 Author
 
-Developed as a **Machine Learning Project for House Price Prediction**.
 
 
 
