@@ -104,8 +104,6 @@ The model predicts house prices and evaluates performance using:
 * Improve model accuracy with **advanced ML algorithms**
 
 ---
-# 👨‍💻 Author
-**Kuncha Usha Rani**
 
 
 
@@ -121,4 +119,6 @@ The model predicts house prices and evaluates performance using:
 <img width="1914" height="922" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/222c601b-31ac-4b0b-86e2-985dfe21b837" />
 <img width="1904" height="923" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/952d3d88-cf16-48e5-93ec-e1e0809b2e41" />
 
-
+---
+# 👨‍💻 Author
+**Kuncha Usha Rani**
